@@ -1,0 +1,30 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #f6483e;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column-reverse;
+}
+.title h1 {
+  font-family: "Press Start 2P", serif;
+}
+.title img{
+  z-index: 99 !important;
+}
+.image-div{
+  position: relative;
+}
+
+@media only screen and (max-width: 600px){
+  .title{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .title{
+    font-size: .8rem;
+  }
+}

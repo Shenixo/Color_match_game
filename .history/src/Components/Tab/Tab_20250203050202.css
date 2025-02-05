@@ -1,0 +1,10 @@
+.tab{
+    padding: 1rem;
+    border-radius: 30px;
+    background: #50C878;
+    color: white;
+    padding-inline: 3%;
+}
+.tab h1{
+    font-family: "Press Start 2P", serif;
+}

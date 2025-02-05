@@ -1,0 +1,40 @@
+.tab {
+    padding: 1rem;
+    background: #1ec756;
+    color: white;
+    cursor: pointer;
+    box-shadow: 
+        4px 4px 0px black,
+        8px 8px 0px #0e7a39;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    min-width: 250px;
+    font-family: 'Press Start 2P', cursive; /* Pixel font */
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    position: relative;
+    transition: all 0.2s;
+    image-rendering: pixelated;
+}
+
+/* Remove rounded edges */
+.tab::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: inherit;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 5% 90%, 5% 10%);
+}
+
+/* Pressed effect */
+.tab:active {
+    box-shadow: 
+        2px 2px 0px black,
+        4px 4px 0px #0e7a39;
+    transform: translate(2px, 2px);
+}

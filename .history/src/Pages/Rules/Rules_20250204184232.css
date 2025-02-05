@@ -1,0 +1,9 @@
+.rules{
+    color: rgb(160, 159, 159);
+    font-size: 1.2rem;
+    padding-inline: 5%;
+}
+.rules p{
+    line-height: 50px;
+    font-family: "Press Start 2P", serif;
+}

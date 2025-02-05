@@ -1,0 +1,12 @@
+.game-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+}
+
+@media only screen and (max-width: 880px){
+    .game-tab{
+        
+    }
+}

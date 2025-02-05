@@ -1,0 +1,54 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.card div {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for chosen card */
+.chosen_card {
+  animation: pulse 1.2s 3 ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Collapse all cards into one at the center */
+.card.collapse div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 1;
+}
+
+/* Spread out again with shuffled colors */
+.card.spread div {
+  position: static;
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}

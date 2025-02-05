@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #f6483e;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column-reverse;
+}
+.title h1 {
+  font-family: "Press Start 2P", serif;
+}
+.title img{
+  z-index: 99 !important;
+}
+.image-div{
+  position: relative;
+  offset-distance: ;
+}
+.bulb-icon{
+  position: absolute; 
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -4;
+}
+.display-bulb{
+  top: 0;
+}

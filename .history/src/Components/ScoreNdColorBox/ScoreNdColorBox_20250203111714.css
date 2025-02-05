@@ -1,0 +1,17 @@
+
+.random_card{
+    border-radius: 5px;
+    height: 2.4rem;
+    width: 3rem;
+}
+.target_card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+.target_card p{
+    font-family: "Press Start 2P", serif;
+
+}

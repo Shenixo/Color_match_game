@@ -1,0 +1,11 @@
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #f6483e;
+    font-size: 1.8rem;
+}
+.title h1{
+    font-family: "Press Start 2P", serif;
+
+}
