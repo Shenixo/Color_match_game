@@ -11,7 +11,7 @@ const Rules = () => {
             The objective of the game is to identify and select the originally
             chosen card based on its color. At the start, a random card is
             selected, after which all cards shuffle. Your task is to correctly
-            pick the original card. Each correct selection earns you +5 point,
+            pick the original card. Each correct selection earns you +1 point,
             while an incorrect choice results in a -5 point deduction. <span >🚀</span>
           </p>
           <p>
