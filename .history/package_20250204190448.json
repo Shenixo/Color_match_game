@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
  "homepage": "https://shenixo.github.io/Color_match_game",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
