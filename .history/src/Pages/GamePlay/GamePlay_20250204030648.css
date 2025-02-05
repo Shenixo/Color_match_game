@@ -1,0 +1,10 @@
+.game-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+}
+.bulb{
+    position: absolute;
+    bottom: -100px 1;
+}

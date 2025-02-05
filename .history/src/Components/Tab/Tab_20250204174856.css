@@ -1,0 +1,40 @@
+.tab {
+    padding: 1rem;
+    border-radius: 30px;
+    background: #1ec756;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding-inline: 2rem;
+    margin-bottom: 1.5rem;
+    min-width: 250px;
+    text-align: center;
+    position: relative; /* Added for positioning the pseudo-element */
+    overflow: hidden; /* Added to hide the overflow of the pseudo-element */
+}
+
+.tab::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit; /* Use the same background color */
+    filter: blur(2px); /* Adjust the blur for pixelation effect */
+    z-index: -1; /* Place it behind the button */
+    transform: scale(1.1); /* Slightly scale it for a better effect */
+}
+
+.tab:hover::after {
+    filter: blur(0); /* Remove blur on hover */
+}
+.tab h1{
+    font-family: "Press Start 2P", serif;
+    font-size: 1.2rem;
+}
+.tab:active{
+  scale: .895;
+  opacity: .8;
+}

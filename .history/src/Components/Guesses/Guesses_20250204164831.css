@@ -1,0 +1,8 @@
+.guesses{
+    color: white;
+    display: flex;
+    background-color: red;
+}
+.guesses h3{
+    font-family: "Press Start 2P", serif;
+}

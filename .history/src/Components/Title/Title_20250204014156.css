@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #f6483e;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  flex-direction: column-reverse;
+}
+.title h1 {
+  display: none;
+  /* font-family: "Press Start 2P", serif; */
+}

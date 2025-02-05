@@ -1,0 +1,8 @@
+.rules{
+    color: rgb(160, 159, 159);
+    font-size: 1.4rem;
+    color: blue;
+}
+.rules li{
+    line-height: 50px;
+}

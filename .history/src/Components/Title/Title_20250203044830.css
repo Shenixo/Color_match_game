@@ -1,0 +1,7 @@
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #f5564e;
+    font-size: 1.8rem;
+}

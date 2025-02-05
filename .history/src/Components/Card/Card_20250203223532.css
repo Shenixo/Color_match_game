@@ -1,0 +1,48 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card div {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chosen_card {
+  animation: pulse 1.2s 3 ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.collapse div {
+  transform: scale(0.1) translate(50%, 50%);
+  opacity: 0;
+}
+
+.card.spread div {
+  transform: scale(1) translate(0, 0);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}

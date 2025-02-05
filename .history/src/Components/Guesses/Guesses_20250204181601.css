@@ -1,0 +1,24 @@
+.guesses{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    min-width: fit-content;
+    z-index: 1000;
+    top: -100%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, 15%);
+    transition: .5s;
+    border-radius: 5px;
+    image-rendering: pixelated !important;
+}
+.guesses.guesses_display{
+top: 0;
+}
+.guesses h3{
+    font-family: "Press Start 2P", serif;
+}

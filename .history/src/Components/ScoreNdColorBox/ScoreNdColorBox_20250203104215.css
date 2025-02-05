@@ -1,0 +1,10 @@
+.score_nd_color_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.random_card{
+    border-radius: 5px;
+    height: 1rem;
+    height: 1rem;
+}

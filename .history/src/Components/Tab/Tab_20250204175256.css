@@ -1,0 +1,23 @@
+.tab{
+    padding: 1rem;
+    border-radius: 30px;
+    background: #1ec756;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding-inline: 2rem;
+    margin-bottom: 1.5rem;
+    min-width: 250px;
+    text-align: center;
+    transition: .5s;
+    image-rendering: ;
+}
+.tab h1{
+    font-family: "Press Start 2P", serif;
+    font-size: 1.2rem;
+}
+.tab:active{
+  scale: .895;
+  opacity: .8;
+}
