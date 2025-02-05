@@ -24,7 +24,7 @@
     }
     50% {
       transform: scale(1.1);
-      filter: drop-shadow(0 0 10px rgba(30, 199, 86, .7));
+      filter: drop-shadow(0 0 10px rgba(30, 199, 86, 1));
     }
     100% {
       transform: scale(1);

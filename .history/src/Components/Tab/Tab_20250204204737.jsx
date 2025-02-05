@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import "./Tab.css";
 import PropTypes from "prop-types";
 
-const Tab = ({ content, path = "", className = "", onClickTab = () => {} }) => {
+const Tab = ({ content, path = "", onClickTab = () => {} }) => {
   return (
     <Link to={path} style={{ textDecoration: "none" }}>
       <div
         onClick={onClickTab}  
-        className={`tab ${className}`}
+        className={`tab`}
       >
         <h1>{content}</h1>
       </div>
@@ -18,7 +18,6 @@ const Tab = ({ content, path = "", className = "", onClickTab = () => {} }) => {
 Tab.propTypes = {
   content: PropTypes.node.isRequired,
   path: PropTypes.string,
-  className: PropTypes.string,
   onClickTab: PropTypes.func.isRequired,  
 };
 

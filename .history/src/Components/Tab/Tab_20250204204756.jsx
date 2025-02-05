@@ -18,7 +18,6 @@ const Tab = ({ content, path = "", className = "", onClickTab = () => {} }) => {
 Tab.propTypes = {
   content: PropTypes.node.isRequired,
   path: PropTypes.string,
-  className: PropTypes.string,
   onClickTab: PropTypes.func.isRequired,  
 };
 

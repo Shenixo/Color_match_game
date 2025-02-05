@@ -58,7 +58,7 @@ const Card = () => {
   const handleWinState = () => {
     playSound(win_sound);
     setLocalScore((prev) => {
-      const newScore = prev + 5;
+      const newScore = prev + 100;
       setGlobalScore(newScore);
       setIsCorrectGlobal(true)
       return newScore;
@@ -68,7 +68,7 @@ const Card = () => {
   const handleLoseState = () => {
     playSound(lose_sound);
     setLocalScore((prev) => {
-      const newScore = prev - 5;
+      const newScore = prev - 100;
       setGlobalScore(newScore);
       setIsCorrectGlobal(false)
       return newScore;

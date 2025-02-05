@@ -20,21 +20,22 @@
 @keyframes scaleGlow {
     0% {
       transform: scale(1);
-      filter: drop-shadow(0 0 3px rgba(30, 199, 86, 0.3));
+      filter: drop-shadow(0 0 3px rgba(30, 199, 86, 0.5));
     }
     50% {
       transform: scale(1.1);
-      filter: drop-shadow(0 0 10px rgba(30, 199, 86, .7));
+      filter: drop-shadow(0 0 10px rgba(30, 199, 86, 1));
     }
     100% {
       transform: scale(1);
-      filter: drop-shadow(0 0 3px rgba(30, 199, 86, 0.3));
+      filter: drop-shadow(0 0 3px rgba(30, 199, 86, 0.5));
     }
   }
   
   .reveal {
     animation: scaleGlow 1.5s infinite ease-in-out;
     transition: all 0.3s ease;
+    
   }
   
 @media only screen and (max-width: 540px){

@@ -20,7 +20,7 @@ const Rules = () => {
             the chosen card, helping you make a more informed decision. For a
             better experience, enable music to enhance the game&apos;s effect
             and make it more engaging <span>🎵</span>. Additionally, you can navigate back to
-            the home page at any time by clicking on the brain box at the top. More Updates coming soon!
+            the home page at any time by clicking on the brain box at the top. More Updat
           </p>
           <p> Enjoy the game! <span> 🎮</span></p>
         </div>

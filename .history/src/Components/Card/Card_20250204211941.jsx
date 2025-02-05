@@ -18,7 +18,7 @@ let score = parseInt(localStorage.getItem("score")) || 0;
 const setGlobalScore = (newScore) => {
   score = newScore;
   localStorage.setItem("score", score);
-  document.dispatchEvent(new CustomEvent("scoreUpdated", { detail: score.toLocaleString() }));
+  document.dispatchEvent(new CustomEvent("scoreUpdated", { detail: score }));
 };
 
 const playSound = (sound) => {
@@ -58,7 +58,7 @@ const Card = () => {
   const handleWinState = () => {
     playSound(win_sound);
     setLocalScore((prev) => {
-      const newScore = prev + 5;
+      const newScore = prev + 100;
       setGlobalScore(newScore);
       setIsCorrectGlobal(true)
       return newScore;
@@ -68,7 +68,7 @@ const Card = () => {
   const handleLoseState = () => {
     playSound(lose_sound);
     setLocalScore((prev) => {
-      const newScore = prev - 5;
+      const newScore = prev - 100;
       setGlobalScore(newScore);
       setIsCorrectGlobal(false)
       return newScore;

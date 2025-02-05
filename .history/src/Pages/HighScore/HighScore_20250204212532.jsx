@@ -59,7 +59,7 @@ const HighScore = () => {
 
   return (
     <div className="high-score-container">
-      {viewHighScore && highScore > 5 ? (
+      {viewHighScore && highScore > 500 ? (
         <img
           className="celebration-gif"
           src={celebration_gif}

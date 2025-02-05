@@ -59,7 +59,7 @@ const HighScore = () => {
 
   return (
     <div className="high-score-container">
-      {viewHighScore && highScore > 5 ? (
+      {viewHighScore && highScore > 1 ? (
         <img
           className="celebration-gif"
           src={celebration_gif}
@@ -68,10 +68,10 @@ const HighScore = () => {
       ) : null}
       <div className="container">
         <Title content="High Score" />
-        {!viewHighScore && highScore > 5 ? (
+        {!viewHighScore && highScore > 1 ? (
           <Tab className="reveal" content="Click to Reveal" onClickTab={handleViewHighScore} />
         ) : (
-          <h2 className="high_score">New Record:{highScore}</h2>
+          <h2 className="high_score">New Record: {highScore}</h2>
         )}
       </div>
     </div>
